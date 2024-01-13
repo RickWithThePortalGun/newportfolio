@@ -19,7 +19,7 @@ const Hero = () => {
     }
   }, []);
   return (
-    <div className="gap-1 items-center justify-center text-white w-full h-full flex flex-col">
+    <div className="gap-1 items-center pt-[100px] justify-center text-white w-full h-full flex flex-col">
       <span id="name-text">
         <p className="hero-text text-[80px] mt-[5%] max-sm:mt-[2%] tracking-[1px] font-sans leading-[1px] max-sm:pt-[10px] max-sm:text-[50px] mx-auto whitespace-nowrap text-center w-full">
           Oyeniyi Victor
