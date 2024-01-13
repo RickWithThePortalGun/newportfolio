@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-hero-right {
+  fill: radial-gradient(
+    36.17% 50% at 63.83% 50%,
+    rgba(2, 45, 255, 0.8) 0%,
+    rgba(4, 13, 255, 0.62) 48.5%,
+    rgba(5, 0, 255, 0.1) 100%
+  );
+  opacity: 0.3;
+  mix-blend-mode: color;
+  filter: blur(4px);
+}
+.subtext-gradient {
+  opacity: 1;
+  background: conic-gradient(
+    from 31deg at -62.22% 281.02%,
+    rgba(189, 212, 255, 0.93) 0deg,
+    rgba(159, 184, 255, 0.38) 57.18008279800415deg,
+    #88a2ff 360deg
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+.hero-text {
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.subtopic {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+
+.ai_img {
+  border-radius: 19px;
+  border: 4px solid rgba(189, 212, 255, 0.94);
+  background: url("/assets/aiimg.JPG"),
+    lightgray 0px 0px / 100% 102.79% no-repeat;
+  background-size: cover;
+}
+
+.tools_tech {
+  background: radial-gradient(
+    14722.13% 202.28% at 31.75% 80%,
+    rgba(189, 212, 255, 0.93) 0%,
+    rgba(189, 212, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

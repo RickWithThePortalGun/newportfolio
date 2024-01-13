@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="725" height="1444" viewBox="0 0 725 1444" fill="none">
+  <g style={{mixBlendMode:'plus-lighter'}} opacity="0.1" filter="url(#filter0_f_8_11)">
+    <path d="M-534.766 1259.9C-768.512 1026.19 -768.539 647.24 -534.827 413.495C-301.114 179.749 401.313 -143.802 635.059 89.9102C868.804 323.622 545.352 1026.1 311.64 1259.84C77.9281 1493.59 -301.021 1493.61 -534.766 1259.9Z" fill="url(#paint0_radial_8_11)"/>
+  </g>
+  <defs>
+    <filter id="filter0_f_8_11" x="-718.093" y="0.9646" width="1442.13" height="1442.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_8_11"/>
+    </filter>
+    <radialGradient id="paint0_radial_8_11" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-111.593 836.668) rotate(-135.004) scale(598.5 598.5)">
+      <stop stopColor="#022DFF" stopOpacity="0.8"/>
+      <stop offset="0.485" stopColor="#040DFF" stopOpacity="0.62"/>
+      <stop offset="1" stopColor="#0500FF" stopOpacity="0.1"/>
+    </radialGradient>
+  </defs>
+</svg>
