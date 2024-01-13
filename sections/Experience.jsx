@@ -22,10 +22,7 @@ const Experience = () => {
                   Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
                   E-commerce & Marketing pages.
                 </Timeline.Body>
-                <Button color="gray">
-                  Learn More
-                  <HiArrowNarrowRight className="ml-2 h-3 w-3" />
-                </Button>
+                
               </Timeline.Content>
             </Timeline.Item>
             ))}
