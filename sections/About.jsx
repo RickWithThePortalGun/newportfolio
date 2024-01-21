@@ -71,7 +71,7 @@ const About = () => {
         <div className="w-full max-sm:justify-center max-lg:justify-center max-md:justify-center pr-20 max-sm:pr-0 flex pt-10">
           <Image
             src={`assets/aiimg.svg`}
-            className="max-sm:w-[250px]"
+            className="max-sm:w-[250px] "
             width={400}
             height={400}
             alt="My Image"

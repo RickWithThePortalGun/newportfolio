@@ -28,13 +28,13 @@ const Hero = () => {
       <p className="hero-text text-[80px] subtext-gradient leading-tight tracking- max-sm:mt-[2px] max-sm:text-[50px] mx-auto whitespace-nowrap max-lg:whitespace-normal max-sm:whitespace-normal text-center w-full">
         Mobile & Web Developer
       </p>
-      <div className="flex flex-row gap-10 max-sm:gap-5 text-[12px] max-sm:text-[8px] pt-[15px] justify-center text-grey font-sans">
+      <div className="flex flex-row gap-10 max-sm:gap-5 text-[14px] max-sm:text-[8px] pt-[15px] justify-center text-grey font-sans">
         <p>Backend</p>
         <p>Frontend</p>
         <p>DevOps</p>
       </div>
-      <div className="rounded-[18px] border-[1px] mt-[15px] w-auto py-2 px-2 border-grey">
-        <p className="text-center text-grey text-[10px] px-2">Remote</p>
+      <div className="rounded-[18px] border-none mt-[15px] w-auto py-2 px-2 bg-teal-400/10">
+        <p className="text-center text-teal-300 text-[10px] px-2">Remote</p>
       </div>
       <motion.div
         variants={fadeIn("up", "spring", 0.5, 2)}

@@ -26,29 +26,29 @@ const Navbar = () => {
         <rect y="10" width="25" height="2" rx="1" fill="#D9D9D9" />
         <rect y="15" width="25" height="2" rx="1" fill="#D9D9D9" />
       </svg>
-      <div className="max-sm:hidden text-grey flex flex-row items-center gap-10 font-sans font-normal text-[15px]">
-        <p className="cursor-pointer" onClick={() => {
+      <div className="max-sm:hidden  text-grey flex flex-row items-center gap-10 font-sans font-normal text-[15px]">
+        <p className="cursor-pointer hover-effect z-50" onClick={() => {
               document.getElementById("about-component").scrollIntoView({
                 behavior: "smooth",
               });
             }}>About Me</p>
-        <p className="cursor-pointer" onClick={() => {
+        <p className="cursor-pointer hover-effect z-50" onClick={() => {
               document.getElementById("skills-component").scrollIntoView({
                 behavior: "smooth",
               });
             }}>Skills</p>
-        <p className="cursor-pointer" onClick={() => {
+        <p className="cursor-pointer hover-effect z-50" onClick={() => {
               document.getElementById("education-component").scrollIntoView({
                 behavior: "smooth",
               });
             }}>Education</p>
-        <p className="cursor-pointer" onClick={() => {
+        <p className="cursor-pointer hover-effect z-50" onClick={() => {
               document.getElementById("experience-component").scrollIntoView({
                 behavior: "smooth",
               });
             }}>Experiences</p>
-        <div className="rounded-[28px] flex-shrink-0 border-[1px] px-[15px] py-[5px] my-auto w-auto border-grey">
-          <p className="text-center">Contact</p>
+        <div className="rounded-[28px] z-50 hover-effect flex-shrink-0 border-[1px] px-[15px] py-[5px] my-auto w-auto border-grey">
+          <p className=" cursor-pointer text-center">Contact</p>
         </div>
       </div>
     </div>
