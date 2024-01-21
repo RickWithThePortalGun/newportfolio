@@ -8,7 +8,7 @@ const LoadingScreen = () => {
 
     gsap.set(svg, {
       transformOrigin: "center center",
-      scale: 0.4, // Adjust the initial scale as needed
+      scale: 0.2, // Adjust the initial scale as needed
       fill: "#FFFFFF",
       position: "absolute",
       top: "50%",

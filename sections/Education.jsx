@@ -10,7 +10,7 @@ const Education = () => {
       </span>
       <div className="grid grid-cols-4 max-sm:grid-cols-1 pr-4 pt-10 gap-8 auto-rows-[200px] auto-cols-[200px] rounded-full max-sm:auto-rows-[200px] max-lg:auto-rows-[250px] max-lg:grid-cols-1">
         <motion.div
-          variants={fadeIn("up", "spring", 0.5, 2)}
+          variants={fadeIn("up", "spring", 0.5, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="border-2 border-lighterblue rounded-[15px] text-white relative"
@@ -24,7 +24,7 @@ const Education = () => {
           </div>
         </motion.div>
         <motion.div
-          variants={fadeIn("up", "spring", 0.7, 2)}
+          variants={fadeIn("up", "spring", 0.7, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="border-2 border-lighterblue rounded-[15px] text-white relative"
@@ -39,7 +39,7 @@ const Education = () => {
           </div>
         </motion.div>
         <motion.div
-          variants={fadeIn("up", "spring", 0.9, 2)}
+          variants={fadeIn("up", "spring", 0.9, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="border-2 border-lighterblue rounded-[15px] text-white relative"
@@ -56,7 +56,7 @@ const Education = () => {
           </div>
         </motion.div>
         <motion.div
-          variants={fadeIn("up", "spring", 0.9, 2)}
+          variants={fadeIn("up", "spring", 0.9, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="border-2 border-lighterblue rounded-[15px] text-white relative"
