@@ -19,7 +19,7 @@ const Hobbies = () => {
         whileInView={`show`}
         className=" pt-20 gap-4"
       >
-        <div className=" pl-20 max-sm:pl-5 grid items-start px-10 grid-auto-flow-row-dense grid-cols-[500px_auto] grid-rows-auto z-50 max-sm:grid-cols-1 gap-4">
+        <div className=" pl-20 max-sm:pl-5 grid items-start px-10 grid-auto-flow-row-dense grid-cols-[500px_auto] grid-rows-auto z-50 max-sm:grid-cols-1 max-md:grid-cols-1 max-lg:grid-cols-1 gap-4">
           {hobbys.map((hobby, index) => (
             <>
               <div key={index} className="flex flex-col gap-4 justify-start">
