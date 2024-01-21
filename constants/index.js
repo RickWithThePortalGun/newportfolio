@@ -1,7 +1,7 @@
 const startups = [
   {
     company_name: "Instinct",
-    date: "Sept 2023",
+    date: "Jan 2023",
     development: "On Hold",
     designation: "Founder • Virtual Assistant • Developer • Marketing",
     location: "Abuja, Nigeria",
