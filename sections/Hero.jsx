@@ -37,6 +37,8 @@ const Hero = () => {
         <p className="text-center text-teal-300 text-[10px] px-2">Remote</p>
       </div>
       <motion.div
+                  viewport={{once:true}}
+
         variants={fadeIn("up", "spring", 0.5, 2)}
         initial={`hidden`}
         whileInView={`show`}
@@ -51,6 +53,7 @@ const Hero = () => {
             }}
           >
             <motion.svg
+                        viewport={{once:true}}
               animate={{
                 y: [0, 24, 0],
               }}

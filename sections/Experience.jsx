@@ -26,6 +26,8 @@ const Experience = () => {
         <p className="text-center text-white pt-10 text-[25px]">Startups</p>
       </div>
       <motion.div
+                  viewport={{once:true}}
+
         variants={fadeIn("up", "spring", 0.5, 1)}
         initial={`hidden`}
         whileInView={`show`}
@@ -77,6 +79,8 @@ const Experience = () => {
         <p className="text-center text-white pt-10 text-[25px]">Projects</p>
       </div>
       <motion.div
+                  viewport={{once:true}}
+
         variants={fadeIn("up", "spring", 0.7, 1)}
         initial={`hidden`}
         whileInView={`show`}

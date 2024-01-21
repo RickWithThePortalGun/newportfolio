@@ -33,6 +33,7 @@ export default function Home() {
         <LoadingScreen />
       ) : (
         <motion.div
+        viewport={{once: true}}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}

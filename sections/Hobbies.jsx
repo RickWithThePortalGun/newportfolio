@@ -12,6 +12,8 @@ const Hobbies = () => {
         </p>
       </div>
       <motion.div
+                  viewport={{once:true}}
+
         variants={fadeIn("up", "spring", 0.5, 1)}
         initial={`hidden`}
         whileInView={`show`}
@@ -28,9 +30,9 @@ const Hobbies = () => {
                   {hobby.keywords.map((keyword, index) => (
                     <span
                       key={index}
-                      className="rounded-[18px] border-[1px] mt-[5px] w-fit py-1 px-2 border-grey"
+                      className="rounded-[18px] border-none mt-[5px] w-fit py-1 px-2 bg-teal-400/10"
                     >
-                      <p className="text-center text-grey text-[12px] px-2">
+                      <p className="text-center text-teal-300 text-[12px] px-2">
                         {keyword}
                       </p>
                     </span>

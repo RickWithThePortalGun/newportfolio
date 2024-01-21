@@ -2,15 +2,9 @@ import React from "react";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
-import { fadeIn} from "@utils/motion";
-import { useInView } from "react-intersection-observer";
-import { useRef } from "react";
+import { fadeIn } from "@utils/motion";
 
 const About = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true, // Trigger animation only once when in view
-  });
-
   return (
     <div className="flex flex-col z-50 pt-[100px] text-white h-fit">
       <div className="flex max-sm:flex-col h-fit max-lg:flex-col max-lg:justify-center flex-row">
@@ -20,6 +14,7 @@ const About = () => {
           </span>
           <div className="text-[20px] max-sm:text-[15px] flex flex-col gap-4 pt-10 text-grey">
             <motion.p
+              viewport={{ once: true }}
               variants={fadeIn("right", "spring", 0.5, 1)}
               initial={`hidden`}
               whileInView={`show`}
@@ -29,6 +24,7 @@ const About = () => {
               {`> 5 years in programming.`}{" "}
             </motion.p>
             <motion.p
+              viewport={{ once: true }}
               variants={fadeIn("right", "spring", 1, 1)}
               initial={`hidden`}
               whileInView={`show`}
@@ -38,6 +34,7 @@ const About = () => {
               {`> 4 years in web development.`}{" "}
             </motion.p>
             <motion.p
+              viewport={{ once: true }}
               variants={fadeIn("right", "spring", 1.5, 1)}
               initial={`hidden`}
               whileInView={`show`}
@@ -49,9 +46,9 @@ const About = () => {
           </div>
           <div className="w-2/3 max-sm:w-full text-grey pt-10">
             <motion.p
-              ref={ref}
+              viewport={{ once: true }}
               initial={{ opacity: 0 }}
-              animate={{ opacity: inView ? 1 : 0 }}
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 3.5 }}
               className="text-left"
             >
@@ -71,7 +68,7 @@ const About = () => {
         <div className="w-full max-sm:justify-center max-lg:justify-center max-md:justify-center pr-20 max-sm:pr-0 flex pt-10">
           <Image
             src={`assets/aiimg.svg`}
-            className="max-sm:w-[250px] "
+            className="max-sm:w-[250px] blur transition-all duration-500 hover:blur-0"
             width={400}
             height={400}
             alt="My Image"
