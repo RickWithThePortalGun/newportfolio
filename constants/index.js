@@ -142,24 +142,45 @@ const hobbys = [
       "English",
       "Software",
       "Udemy",
+      "Psychology",
+      "Innovative Technology"
+
     ],
     short_note: [
-      `<blockquote class="font-bold text-center text-white mt-2">I don't want to have to regret anything. I want to be able to say, 'I am who I am'. For better or for worse, I've learned and I've grown. <br/> <span class="text-grey">Killua Zoldyck</span></blockquote><br/>\n Currently, I am in my penultimate year of studying for a <b class="text-white">Bachelor's degree</b> in <b class="text-white">Computer Engineering</b> at the Federal University of technology, Minna, Niger.</br> I refresh and upgrade my backend and frontend skills using online courses. An ardent practitioner of stoicism with a solid interest in innovations, I embrace its teachings to cultivate resilience, mental fortitude, and a stoic mindset that proves invaluable amidst the dynamic challenges of the entrepreneurial world. As a tech enthusiast with a well-rounded expertise in IT, I am consistently abreast of the latest technological trends. `,
+      `<blockquote class="italic font-bold text-center text-white mt-2">I don't want to have to regret anything. I want to be able to say, 'I am who I am'. For better or for worse, I've learned and I've grown. <br/> <span class="text-grey">Killua Zoldyck</span></blockquote><br/>\n Currently, I am in my penultimate year of studying for a <b class="text-white">Bachelor's degree</b> in <b class="text-white">Computer Engineering</b> at the Federal University of technology, Minna, Niger.</br> I refresh and upgrade my backend and frontend skills using online courses. I'm also looking forward to a Master's degree in Software Engineering.`,
     ],
   },
   {
     hobby: "Music, Listen and Play",
     keywords: [
-      "Stoicism",
-      "Engineering",
-      "Science",
-      "English",
-      "Software",
-      "Udemy",
+      "Afrobeats",
+      "The Weekend",
+      "Fumez The Engineer",
+      "Lo-fi",
+      "Drake",
+      "Rap",
+      "Metro Boomin",
+      "Burna Boy",
+
     ],
-    short_note:
-      "I don't want to have to regret anything. I want to be able to say, 'I am who I am. For better or for worse, I've learned and I've grown - Killua Zoldyck.<br/> \n Currently, I am in my penultimate year of study for a Computer Engineering major in Federal University of technology, Minna Niger.</br> I refresh and upgrade my backend and frontend skills using online courses. I love to always be current on the latest frontend trend, animation libraries, checking the Awwwards for the most awe-inspiring designs.  I am an ardent practitioner of stoicism, embracing its teachings to cultivate resilience, mental fortitude, and a stoic mindset that proves invaluable amidst the dynamic challenges of the entrepreneurial world. Stoicism, with its emphasis on self-discipline and rationality, aligns seamlessly with my approach to decision-making and problem-solving. As a tech enthusiast with a well-rounded expertise in IT, I am consistently abreast of the latest technological trends. This knowledge not only empowers my entrepreneurial endeavors but also enables me to envision innovative solutions that bridge the gap between education and cutting-edge technology ",
+    short_note:"Debugging code by day, debugging playlists by night - my hobby isn't just coding; it's a rhythm-infused escape. Music is my algorithm for unwinding. Balancing syntax and beats in the world of 1s and 0s, music adds the perfect harmony between coding and relaxation."
   },
+  {
+    hobby: "Games",
+    keywords: [
+      "FIFA",
+      "Call of Duty",
+      "EA Sports",
+      "Grand Theft Auto",
+      "Mafia",
+      "Multiplayer",
+      "Far Cry",
+      "Action",
+      "Assasins Creed",
+      "God of War",
+    ],
+    short_note:"Developer by day, gamer by night - I find joy in the virtual realms of gaming. When I'm not winning chicken dinners, I'm taking out the enemy's UAV with my teammate. I prefer to both work and play with my colleagues. It's my downtime therapy, adding a pixelated dimension to my tech-heavy routine."
+  }
 ];
 
 export { startups, projects, hobbys };

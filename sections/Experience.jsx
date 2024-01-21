@@ -4,7 +4,7 @@ import { startups, projects } from "@constants";
 import { motion } from "framer-motion";
 import { fadeIn } from "@utils/motion";
 
-const Experience = () => {  
+const Experience = () => {
   const statusColorMap = {
     Incomplete: "yellow-200",
     Offline: "red-200",
@@ -18,7 +18,6 @@ const Experience = () => {
     Online: "Online",
     Ongoing: "Ongoing",
   };
-
 
   return (
     <>
@@ -129,7 +128,15 @@ const Experience = () => {
                   </a>{" "}
                 </div>
                 <span
-                  className={`items-start tracking-wider rounded-full text-[8px] w-fit px-2 py-1 my-2 flex justify-center gap-2 ${project.status==="Ongoing" ? "bg-yellow-400/10 text-yellow-300":"" || project.status==="Online"? "bg-teal-400/10 text-teal-300":"" || project.status==="Offline"? "bg-red-400/10 text-red-300":""}`}
+                  className={`items-start tracking-wider rounded-full text-[8px] w-fit px-2 py-1 my-2 flex justify-center gap-2 ${
+                    project.status === "Ongoing"
+                      ? "bg-yellow-400/10 text-yellow-300"
+                      : "" || project.status === "Online"
+                      ? "bg-teal-400/10 text-teal-300"
+                      : "" || project.status === "Offline"
+                      ? "bg-red-400/10 text-red-300"
+                      : ""
+                  }`}
                 >
                   {statusTextMap[project.status]}
                 </span>
@@ -142,7 +149,6 @@ const Experience = () => {
               </div>
             </div>
           </>
-            
         ))}
       </motion.div>
     </>

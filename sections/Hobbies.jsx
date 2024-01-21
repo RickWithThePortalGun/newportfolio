@@ -17,13 +17,13 @@ const Hobbies = () => {
         variants={fadeIn("up", "spring", 0.5, 1)}
         initial={`hidden`}
         whileInView={`show`}
-        className=" pt-20 gap-4"
+        className=" pt-20 gap-8"
       >
-        <div className=" pl-20 max-sm:pl-5 grid items-start px-10 grid-auto-flow-row-dense grid-cols-[500px_auto] grid-rows-auto z-50 max-sm:grid-cols-1 max-md:grid-cols-1 max-lg:grid-cols-1 gap-4">
+        <div className=" pl-20 max-sm:pl-5 grid items-center  px-10 grid-auto-flow-row-dense grid-cols-[500px_auto] grid-rows-auto z-50 max-sm:grid-cols-1 max-md:grid-cols-1 max-lg:grid-cols-1 gap-4">
           {hobbys.map((hobby, index) => (
             <>
               <div key={index} className="flex flex-col gap-4 justify-start">
-                <p className="subtext-gradient text-[25px] font-semibold">
+                <p className="text-lighterblue text-[25px] font-semibold">
                   {hobby.hobby}
                 </p>
                 <div className="flex flex-row flex-wrap gap-2 ">
