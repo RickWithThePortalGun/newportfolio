@@ -2,8 +2,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="bg-transparent mt-[200px] mb-[200px]  z-50 flex flex-row justify-center items-center">
-      <div className="bg-gradient-conic py-10 pl-10 pr-4 rounded-3xl w-fit h-full flex flex-row max-sm:flex-col gap-8">
+    <div className="bg-transparent mt-[200px] pb-[200px] relative  z-50 flex flex-col justify-center items-center">
+      <div className="bg-gradient-conic py-10 pl-10 pr-4 rounded-3xl max-sm:rounded-none max-sm:w-full w-fit  h-full flex flex-row max-sm:flex-col gap-8">
         <div>
           <p className="text-[30px] font-semibold text-white mb-6">
             Contact Me
@@ -66,6 +66,11 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <p className="absolute bottom-0 text-grey text-[15px] mt-[200px] font-sans font-normal text-center">
+      &copy;
+2024 QuantumUi.dev All Rights Reserved.
+      </p>
+
     </div>
   );
 };

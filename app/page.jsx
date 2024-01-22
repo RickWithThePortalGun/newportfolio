@@ -42,7 +42,7 @@ export default function Home() {
         //   transition={{ duration: 1 }}
           className="relative font-sans max-w-[90rem] mx-auto w-full h-screen overflow-x-hidden"
         >
-          <div className="w-full max-w-[90rem] px-6 flex justify-center max-sm:bg-customblack bg-customblack">
+          <div className="w-full max-w-[90rem] px-6 flex justify-center max-sm:fixed max-sm:z-50 max-sm:bg-customblack bg-customblack">
             <Navbar />
           </div>
 
@@ -408,7 +408,7 @@ export default function Home() {
             </svg>
             <Hobbies />
           </section>
-          <section className="max-w-[90rem] max-h-max mx-auto relative">
+          <section id="contact-component" className="max-w-[90rem] max-h-max mx-auto relative">
             <Contact />
           </section>
         </motion.div>
