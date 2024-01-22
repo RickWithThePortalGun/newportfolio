@@ -1,6 +1,7 @@
 import { Montserrat } from "next/font/google";
 import localFont from 'next/font/local'
 import "@styles/globals.css";
+
 const montreal = localFont({
   src: [
     {

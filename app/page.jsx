@@ -12,6 +12,8 @@ import {
 } from "@/sections";
 import LoadingScreen from "./loading";
 import { useEffect, useState } from "react";
+import Spline from '@splinetool/react-spline';
+
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
