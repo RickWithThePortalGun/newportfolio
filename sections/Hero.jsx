@@ -34,7 +34,7 @@ const Hero = () => {
       <p className="hero-text z-50 text-[80px] subtext-gradient leading-tight tracking- max-sm:mt-[2px] max-sm:text-[50px] mx-auto whitespace-nowrap max-lg:whitespace-normal max-sm:whitespace-normal text-center w-full">
         Mobile & Web Developer
       </p>
-      <div className="flex flex-row z-50 gap-10 max-sm:gap-5 text-[14px] max-sm:text-[12px] pt-[15px] justify-center text-teal-300  font-sans">
+      <div className="bg-teal-400/10 rounded-full items-center px-2 py-1 flex flex-row z-50 gap-10 max-sm:gap-5 text-[14px] max-sm:text-[12px] mt-[15px] justify-center text-teal-300  font-sans">
         <p>Backend</p>
         <p>Frontend</p>
         <p>DevOps</p>
