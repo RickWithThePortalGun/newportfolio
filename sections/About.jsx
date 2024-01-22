@@ -52,16 +52,7 @@ const About = () => {
               transition={{ duration: 3.5 }}
               className="text-left"
             >
-              I kickstarted my coding journey with{" "}
-              <span className="font-bold">Python</span>, delving into it’s
-              versatile capabilities. Intrigued by Machine Learning, I explored
-              it’s intricacies, paving the way for a deeper understanding.
-              Transitioning into the web domain, I embraced{" "}
-              <span className="font-bold">Django</span>, mastering backend
-              development. From HTML to CSS and JavaScript, I honed my frontend
-              skills, later incorporating React, Tailwind, and diving into
-              Next.js. Expanding my toolkit, I delved into GSAP and Framer,
-              adding motion and interactivity to my creations.
+              A seasoned developer, specialised in creating immersive websites featuring cutting-edge 3D animations and graphics.
             </motion.p>
           </div>
         </div>
