@@ -9,6 +9,7 @@ import {
   Education,
   Experience,
   Hobbies,
+  Contact
 } from "@/sections";
 import LoadingScreen from "./loading";
 import { useEffect, useState } from "react";
@@ -406,6 +407,9 @@ export default function Home() {
               </defs>
             </svg>
             <Hobbies />
+          </section>
+          <section className="max-w-[90rem] max-h-max mx-auto relative">
+            <Contact />
           </section>
         </motion.div>
       )}

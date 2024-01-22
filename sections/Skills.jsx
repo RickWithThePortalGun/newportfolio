@@ -78,7 +78,7 @@ const Skills = () => {
       <div className="grid grid-cols-2 max-sm:grid-cols-1 pt-10 max-sm:pt-5 gap-4 col-span-1 auto-rows-[150px] max-sm:auto-rows-[100px] my-10">
         <motion.div
           viewport={{ once: true }}
-          variants={fadeIn("left", "spring", 0.6, 2)}
+          variants={fadeIn("left", "spring", 0.5, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="bg-transparent h-full pl-10 pt-10 flex flex-col items-start justify-center"
@@ -110,7 +110,7 @@ const Skills = () => {
         </motion.div>
         <motion.div
           viewport={{ once: true }}
-          variants={fadeIn("left", "spring", 0.8, 2)}
+          variants={fadeIn("left", "spring", 0.5, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="bg-transparent h-full pl-10 pt-10 flex flex-col items-start justify-center"
@@ -142,7 +142,7 @@ const Skills = () => {
         </motion.div>
         <motion.div
           viewport={{ once: true }}
-          variants={fadeIn("left", "spring", 1.0, 2)}
+          variants={fadeIn("left", "spring", 0.5, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="bg-transparent h-full pl-10 pt-10 flex flex-col items-start justify-center"
@@ -172,7 +172,7 @@ const Skills = () => {
         </motion.div>
         <motion.div
           viewport={{ once: true }}
-          variants={fadeIn("left", "spring", 1.2, 2)}
+          variants={fadeIn("left", "spring", 0.5, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="bg-transparent h-full pl-10 pt-10 flex flex-col items-start justify-center"
@@ -202,7 +202,7 @@ const Skills = () => {
         </motion.div>
         <motion.div
           viewport={{ once: true }}
-          variants={fadeIn("left", "spring", 1.4, 2)}
+          variants={fadeIn("left", "spring", 0.5, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="bg-transparent h-full pl-10 pt-10 flex flex-col items-start justify-center"
@@ -234,7 +234,7 @@ const Skills = () => {
         </motion.div>
         <motion.div
           viewport={{ once: true }}
-          variants={fadeIn("left", "spring", 1.6, 2)}
+          variants={fadeIn("left", "spring", 0.5, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="bg-transparent h-full pl-10 pt-10 flex flex-col items-start justify-center"

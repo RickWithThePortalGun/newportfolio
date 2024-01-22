@@ -28,7 +28,7 @@ const Education = () => {
         <motion.div
                     viewport={{once:true}}
 
-          variants={fadeIn("up", "spring", 0.7, 1)}
+          variants={fadeIn("up", "spring", 0.5, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="border-2 border-lighterblue rounded-[15px] text-white relative"
@@ -45,7 +45,7 @@ const Education = () => {
         <motion.div
                     viewport={{once:true}}
 
-          variants={fadeIn("up", "spring", 0.9, 1)}
+          variants={fadeIn("up", "spring", 0.5, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="border-2 border-lighterblue rounded-[15px] text-white relative"
@@ -64,7 +64,7 @@ const Education = () => {
         <motion.div
                     viewport={{once:true}}
 
-          variants={fadeIn("up", "spring", 0.9, 1)}
+          variants={fadeIn("up", "spring", 0.5, 1)}
           initial={`hidden`}
           whileInView={`show`}
           className="border-2 border-lighterblue rounded-[15px] text-white relative"

@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import Education from "./Education";
 import Experience from "./Experience";
 import Hobbies from "./Hobbies";
+import Contact from "./Contact";
 
 export{
     Navbar,
@@ -13,5 +14,6 @@ export{
     Education,
     Experience,
     Hobbies,
-    Skills
+    Skills,
+    Contact
 }

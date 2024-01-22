@@ -6,6 +6,17 @@ html {
   scroll-behavior: smooth;
 }
 
+@layer utilities {
+  .bg-gradient-conic {
+    background-image: conic-gradient(
+      from 31deg at -62.22% 281.02%,
+      rgba(189, 212, 255, 0.93) 0deg,
+      rgba(159, 184, 255, 0.38) 57.18008279800415deg,
+      #88a2ff 360deg
+    );
+  }
+}
+
 .bg-hero-right {
   fill: radial-gradient(
     36.17% 50% at 63.83% 50%,

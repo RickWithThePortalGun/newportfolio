@@ -147,7 +147,7 @@ const hobbys = [
 
     ],
     short_note: [
-      `<blockquote class="italic font-bold text-center text-white mt-2">I don't want to have to regret anything. I want to be able to say, 'I am who I am'. For better or for worse, I've learned and I've grown. <br/> <span class="text-grey">Killua Zoldyck</span></blockquote><br/>\n Currently, I am in my penultimate year of studying for a <b class="text-white">Bachelor's degree</b> in <b class="text-white">Computer Engineering</b> at the Federal University of technology, Minna, Niger.</br> I refresh and upgrade my backend and frontend skills using online courses. I'm also looking forward to a Master's degree in Software Engineering.`,
+      `Currently, I am in my penultimate year of studying for a <b class="text-white">Bachelor's degree</b> in <b class="text-white">Computer Engineering</b> at the Federal University of technology, Minna, Niger.</br> I refresh and upgrade my backend and frontend skills using online courses. I'm also looking forward to a Master's degree in Software Engineering.`,
     ],
   },
   {

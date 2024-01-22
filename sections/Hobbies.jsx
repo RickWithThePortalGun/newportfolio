@@ -10,20 +10,29 @@ const Hobbies = () => {
         <p className="subtopic text-[40px] text-start">
           Leisurely Inclinations.
         </p>
+        <span className="mt-[20px]">
+          <blockquote class="italic font-bold text-center text-white mt-2">
+          A lesson without pain is meaningless. For you cannot gain something without sacrificing something else in return.<br /> <span class="text-grey">Edward Elric</span>
+          </blockquote>
+          <br />
+          \n
+        </span>
       </div>
       <motion.div
-                  viewport={{once:true}}
-
+        viewport={{ once: true }}
         variants={fadeIn("up", "spring", 0.5, 1)}
         initial={`hidden`}
         whileInView={`show`}
-        className=" pt-20 gap-8"
+        className=" pt-10 gap-8"
       >
         <div className=" pl-20 max-sm:pl-5 grid items-center  px-10 grid-auto-flow-row-dense grid-cols-[500px_auto] grid-rows-auto z-50 max-sm:grid-cols-1 max-md:grid-cols-1 max-lg:grid-cols-1 gap-4">
           {hobbys.map((hobby, index) => (
             <>
-              <div key={index} className="flex mt-8 max-sm:mt-4
-               flex-col gap-4 justify-start">
+              <div
+                key={index}
+                className="flex mt-8 max-sm:mt-4
+               flex-col gap-4 justify-start"
+              >
                 <p className="text-lighterblue text-[25px] font-semibold">
                   {hobby.hobby}
                 </p>
@@ -41,7 +50,10 @@ const Hobbies = () => {
                 </div>
               </div>
               <div className="">
-                <span  dangerouslySetInnerHTML={{ __html:hobby.short_note}} className="text-[14px] text-grey"></span>
+                <span
+                  dangerouslySetInnerHTML={{ __html: hobby.short_note }}
+                  className="text-[14px] text-grey"
+                ></span>
               </div>
             </>
           ))}
