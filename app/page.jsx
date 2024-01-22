@@ -12,7 +12,6 @@ import {
 } from "@/sections";
 import LoadingScreen from "./loading";
 import { useEffect, useState } from "react";
-import Spline from '@splinetool/react-spline';
 
 
 export default function Home() {
@@ -35,10 +34,10 @@ export default function Home() {
         <LoadingScreen />
       ) : (
         <motion.div
-        viewport={{once: true}}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
+        // viewport={{once: true}}
+        //   initial={{ opacity: 0 }}
+        //   animate={{ opacity: 1 }}
+        //   transition={{ duration: 1 }}
           className="relative font-sans max-w-[90rem] mx-auto w-full h-screen overflow-x-hidden"
         >
           <div className="w-full max-w-[90rem] px-6 flex justify-center max-sm:bg-customblack bg-customblack">
