@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Menu from "@components/Menu";
 
 const Navbar = () => {
   return (
@@ -13,19 +14,7 @@ const Navbar = () => {
           alt="My Logo"
         />
       </div>
-      <svg
-        className="hidden max-sm:block"
-        xmlns="http://www.w3.org/2000/svg"
-        width="25"
-        height="17"
-        viewBox="0 0 25 17"
-        fill="none"
-      >
-        <rect width="25" height="2" rx="1" fill="#D9D9D9" />
-        <rect y="5" width="25" height="2" rx="1" fill="#D9D9D9" />
-        <rect y="10" width="25" height="2" rx="1" fill="#D9D9D9" />
-        <rect y="15" width="25" height="2" rx="1" fill="#D9D9D9" />
-      </svg>
+      <Menu/>
       <div className="max-sm:hidden  text-grey flex flex-row items-center gap-10 font-sans font-normal text-[15px]">
         <p className="cursor-pointer hover-effect z-50" onClick={() => {
               document.getElementById("about-component").scrollIntoView({
