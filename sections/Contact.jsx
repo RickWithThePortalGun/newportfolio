@@ -1,8 +1,16 @@
 import React from "react";
 
 const Contact = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/oyeniyivictorsresume.pdf';
+    link.download = 'Oyeniyi Victors Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
-    <div className="bg-transparent mt-[200px] pb-[200px] relative  z-50 flex flex-col justify-center items-center">
+    <div className="bg-transparent mt-[200px] pb-[200px] relative flex flex-col justify-center items-center">
       <div className="bg-gradient-conic py-10 pl-10 pr-4 rounded-3xl max-sm:rounded-none max-sm:w-full w-fit  h-full flex flex-row max-sm:flex-col gap-8">
         <div>
           <p className="text-[30px] font-semibold text-white mb-6">
@@ -23,7 +31,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex max-sm:justify-end flex-row items-end gap-4">
-          <div className="border-[1px] rounded-full px-2 py-1">
+          <div className="border-[1px] rounded-full px-2 py-1 cursor-pointer" onClick={handleDownload}>
             <p className="text-white">Resume </p>
           </div>
           <div className="flex flex-col gap-4">
@@ -66,7 +74,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <p className="absolute bottom-0 text-grey text-[15px] mt-[200px] font-sans font-normal text-center">
+      <p className="absolute bottom-0 text-grey text-[15px] mt-[200px] mb-10 font-sans font-normal text-center">
       &copy;
 2024 QuantumUi.dev All Rights Reserved.
       </p>

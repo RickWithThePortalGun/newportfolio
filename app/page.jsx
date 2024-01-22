@@ -353,7 +353,7 @@ export default function Home() {
           </section>
           <section className="max-w-[90rem] max-h-max mx-auto relative">
             <svg
-              className="absolute top-0 right-0 z-50"
+              className="absolute top-0 right-0 z-40"
               xmlns="http://www.w3.org/2000/svg"
               width="500"
               height="500"

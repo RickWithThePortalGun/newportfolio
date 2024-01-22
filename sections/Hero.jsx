@@ -33,7 +33,7 @@ const Hero = () => {
             scene="https://prod.spline.design/rlvhbXU9R6aR8DQh/scene.splinecode"
           />
         </Suspense>
-        <span id="name-tex" className="z-50">
+        <span id="name-tex" className="z-40">
           <p className="hero-text text-[80px] mt-[5%] max-sm:mt-[2%] tracking-[1px] font-sans leading-[1px] max-sm:pt-[10px] max-sm:text-[50px] mx-auto whitespace-nowrap text-center w-full">
             Oyeniyi Victor
           </p>
