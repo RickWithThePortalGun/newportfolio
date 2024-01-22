@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  
 
   useEffect(() => {
     const delay = setTimeout(() => {

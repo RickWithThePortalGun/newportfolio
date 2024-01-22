@@ -6,7 +6,7 @@ import { fadeIn } from "@utils/motion";
 import { annotate } from "rough-notation";
 import { Suspense } from "react";
 
-const LazySpline = React.lazy(() => import('@splinetool/react-spline'));
+const LazySpline = React.lazy(() => import("@splinetool/react-spline"));
 
 const Hero = () => {
   useEffect(() => {
@@ -17,7 +17,7 @@ const Hero = () => {
           type: "bracket",
           color: "#ffd465",
           multiline: false,
-          brackets:"bottom"
+          brackets: "bottom",
         }).show();
       }, 1000);
     }
@@ -25,21 +25,23 @@ const Hero = () => {
   return (
     <>
       <div className="gap-1 items-center pt-[100px] max-sm:pt-[50px] justify-center text-white w-full h-full flex flex-col relative">
-          <Suspense fallback={<Image src={"/assets/loader.gif"} width={64} height={64} />}>
-        <LazySpline
-          className={`absolute z-0`}
-          scene="https://prod.spline.design/rlvhbXU9R6aR8DQh/scene.splinecode"
-        />
-      </Suspense>
-        <span id="name-text" className="z-50">
+        <Suspense
+          fallback={<Image src={"/assets/loader.gif"} width={64} height={64} />}
+        >
+          <LazySpline
+            className={`absolute z-0`}
+            scene="https://prod.spline.design/rlvhbXU9R6aR8DQh/scene.splinecode"
+          />
+        </Suspense>
+        <span id="name-tex" className="z-50">
           <p className="hero-text text-[80px] mt-[5%] max-sm:mt-[2%] tracking-[1px] font-sans leading-[1px] max-sm:pt-[10px] max-sm:text-[50px] mx-auto whitespace-nowrap text-center w-full">
             Oyeniyi Victor
           </p>
           <p className="hero-text z-50 text-[80px] subtext-gradient leading-tight tracking- max-sm:mt-[2px] max-sm:text-[50px] mx-auto whitespace-nowrap max-lg:whitespace-normal max-sm:whitespace-normal text-center w-full">
-          Mobile & Web Developer
-        </p>
+            Mobile & Web Developer
+          </p>
         </span>
-        
+
         <div className="bg-teal-400/10 rounded-full items-center px-2 py-1 flex flex-row z-50 gap-10 max-sm:gap-5 text-[14px] max-sm:text-[12px] mt-[15px] justify-center text-teal-300  font-sans">
           <p>Backend</p>
           <p>Frontend</p>
