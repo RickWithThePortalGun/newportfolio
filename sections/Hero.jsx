@@ -22,7 +22,7 @@ const Hero = () => {
   }, []);
   return (
     <>
-    <div className="gap-1 items-center pt-[100px] justify-center text-white w-full h-full flex flex-col relative">
+    <div className="gap-1 items-center pt-[100px] max-sm:pt-[50px] justify-center text-white w-full h-full flex flex-col relative">
 
     <Spline className="absolute z-0" scene="https://prod.spline.design/rlvhbXU9R6aR8DQh/scene.splinecode" />
 
@@ -34,7 +34,7 @@ const Hero = () => {
       <p className="hero-text z-50 text-[80px] subtext-gradient leading-tight tracking- max-sm:mt-[2px] max-sm:text-[50px] mx-auto whitespace-nowrap max-lg:whitespace-normal max-sm:whitespace-normal text-center w-full">
         Mobile & Web Developer
       </p>
-      <div className="flex flex-row z-50 gap-10 max-sm:gap-5 text-[14px] max-sm:text-[8px] pt-[15px] justify-center text-grey font-sans">
+      <div className="flex flex-row z-50 gap-10 max-sm:gap-5 text-[14px] max-sm:text-[12px] pt-[15px] justify-center text-teal-300  font-sans">
         <p>Backend</p>
         <p>Frontend</p>
         <p>DevOps</p>
