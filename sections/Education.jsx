@@ -20,6 +20,8 @@ const Education = () => {
           <div className=" pl-4 pt-5 flex flex-col items-start">
             <p className="text-[20px] font-bold text-[#BDD4FF]">2023</p>
             <p className="font-bold pt-4 py-4">Bachelor's Computer Engineering</p>
+            <p className="font-bold pt-2 py-2">Agile/SCRUM methodology</p>
+
             <div className="absolute bottom-2 right-2 text-[13px] font-semibold text-lighterblue underline">
             University of Technology, Niger.
             </div>
@@ -34,7 +36,7 @@ const Education = () => {
           className="border-2 border-lighterblue rounded-[15px] text-white relative"
         >
           <div className=" pl-4 pt-5 flex flex-col items-start">
-            <p className="text-[20px] font-bold text-[#BDD4FF]">2021</p>
+            <p className="text-[20px] font-bold text-[#BDD4FF]">2020</p>
             <p className="font-bold pt-4 py-4">React.js, Tailwind CSS</p>
             <p className="font-bold pt-2">React-Native, Next.js</p>
             <div className="absolute bottom-2 right-2 text-[13px] font-semibold text-lighterblue underline">
@@ -51,7 +53,7 @@ const Education = () => {
           className="border-2 border-lighterblue rounded-[15px] text-white relative"
         >
           <div className=" pl-4 pt-5 flex flex-col items-start">
-            <p className="text-[20px] font-bold text-[#BDD4FF]">2020</p>
+            <p className="text-[20px] font-bold text-[#BDD4FF]">2019</p>
             <p className="font-bold pt-4 py-4">
               Machine Learning and Data Analysis
             </p>
