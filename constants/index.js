@@ -49,6 +49,15 @@ const startups = [
 
 const projects = [
   {
+    project_name: "Thundr Analytics",
+    date: "Jan 2024",
+    status: "Online",
+    designation: "Next.js • Tailwind CSS •  GSAP",
+    link: "https://4reinermars-geegpay-frontend-challenge.vercel.app",
+    description:
+      "Participated in a rigorous frontend challenge hosted by Geegpay, tasked with creating a responsive UI interface from a provided mockup",
+  },
+  {
     project_name: "Adola AI",
     date: "Jun 2023",
     status: "Online",
