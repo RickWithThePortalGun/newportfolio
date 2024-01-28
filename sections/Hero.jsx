@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { fadeIn } from "@utils/motion";
 import { annotate } from "rough-notation";
 import { Suspense } from "react";
+import { useWindowSize } from "@utils/hooks";
 
 const LazySpline = React.lazy(() => import("@splinetool/react-spline"));
 
@@ -22,17 +23,21 @@ const Hero = () => {
       }, 1000);
     }
   }, []);
+  const { width } = useWindowSize();
+  const isMobile = width <= 768;
   return (
     <>
       <div className="gap-1 items-center pt-[100px] max-sm:pt-[50px] justify-center text-white w-full h-full flex flex-col relative">
-        <Suspense
-          fallback={<Image src={"/assets/loader.gif"} width={64} height={64} />}
-        >
+        {isMobile ? (<><Image className="w-full absolute z-0 top-[25%]" priority unoptimized src={`/assets/noisylights.png`} width={100} height={100}/></>):(
+          <>
+          <Suspense fallback={<Image src={"/assets/loader.gif"} width={64} height={64} />}>
           <LazySpline
             className={`absolute z-0`}
             scene="https://prod.spline.design/rlvhbXU9R6aR8DQh/scene.splinecode"
           />
         </Suspense>
+        </>)}
+        
         <span id="name-tex" className="z-40">
           <p className="hero-text text-[80px] mt-[5%] max-sm:mt-[2%] tracking-[1px] font-sans leading-[1px] max-sm:pt-[10px] max-sm:text-[50px] mx-auto whitespace-nowrap text-center w-full">
             Oyeniyi Victor
