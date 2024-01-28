@@ -28,7 +28,7 @@ const Hero = () => {
   return (
     <>
       <div className="gap-1 items-center pt-[10px] max-sm:pt-[50px] justify-center text-white w-full h-full flex flex-col relative">
-        {isMobile ? (<><Image className="w-full scale-[3] absolute z-0 md:top-10 md:scale-[1.5] top-30" priority unoptimized src={`/assets/noisylights.png`} width={400} height={400} /></>):(
+        {isMobile ? (<></>):(
           <>
           <Suspense fallback={<Image src={"/assets/loader.gif"} width={64} height={64} />}>
           <LazySpline
