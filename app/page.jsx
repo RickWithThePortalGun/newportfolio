@@ -36,10 +36,10 @@ export default function Home() {
         <LoadingScreen />
       ) : (
         <motion.div
-        // viewport={{once: true}}
-        //   initial={{ opacity: 0 }}
-        //   animate={{ opacity: 1 }}
-        //   transition={{ duration: 1 }}
+        viewport={{once: true}}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 , ease: "easeInOut"  }}
           className="relative font-sans max-w-[90rem] mx-auto w-full h-screen overflow-x-hidden"
         >
           <div className="w-full max-w-[90rem] px-6 flex justify-center max-sm:fixed max-sm:z-50 max-sm:bg-customblack bg-customblack">
