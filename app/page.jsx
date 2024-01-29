@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import MouseFollowGradient from "@components/MouseFollowGradient";
 import {
   Navbar,
   Hero,
@@ -14,8 +13,6 @@ import {
 import LoadingScreen from "./loading";
 import { useEffect, useState } from "react";
 import React from "react";
-
-const LazySpline = React.lazy(() => import("@splinetool/react-spline"));
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
