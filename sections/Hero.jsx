@@ -32,7 +32,7 @@ const Hero = ({isLoading, LazySpline}) => {
           <p className="hero-text text-[80px] mt-[5%] max-sm:mt-[2%] tracking-[1px] font-sans leading-[1px] max-sm:pt-[10px] max-sm:text-[40px] max-sssm:[10px] mx-auto whitespace-nowrap text-center w-full">
             Oyeniyi Victor
           </p>
-          <p className="hero-text z-50 text-[80px] subtext-gradient leading-tight tracking- max-sm:mt-[2px] max-sm:text-[40px] mx-auto whitespace-nowrap max-lg:whitespace-normal max-sm:whitespace-normal text-center w-full">
+          <p className="z-50 text-[80px] subtext-gradient leading-tight tracking- max-sm:mt-[2px] max-sm:text-[40px] mx-auto whitespace-nowrap max-lg:whitespace-normal max-sm:whitespace-normal text-center w-full">
             Mobile & Web Developer
           </p>
         </span>
@@ -67,7 +67,7 @@ const Hero = ({isLoading, LazySpline}) => {
               }}
               transition={{
                 duration: 1.5,
-                repeat: Infinity,
+                repeat: 5,
                 repeatType: "loop",
               }}
               xmlns="http://www.w3.org/2000/svg"

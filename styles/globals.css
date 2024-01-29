@@ -54,6 +54,10 @@ html {
   filter: blur(4px);
 }
 .subtext-gradient {
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
   opacity: 1;
   background: conic-gradient(
     from 31deg at -62.22% 281.02%,

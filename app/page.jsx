@@ -45,7 +45,7 @@ export default function Home() {
           transition={{ duration: 2, ease: "easeInOut" }}
           className="relative font-sans max-w-[90rem] mx-auto w-full h-screen overflow-x-hidden"
         >
-          <div className="w-full max-w-[90rem] px-6 flex justify-center max-sm:fixed max-sm:z-50 max-md:bg-glassmorphism">
+          <div className="w-full max-w-[90rem] px-6 flex justify-center max-sm:fixed max-sm:z-50 rounded-full max-md:bg-glassmorphism">
             <Navbar onMenuToggle={handleMenuToggle} />
           </div>
           <section
@@ -162,7 +162,7 @@ export default function Home() {
                 </radialGradient>
               </defs>
             </svg>{" "}
-            <Hero isLoading={isLoading} LazySpline={LazySpline} />
+            <Hero isLoading={isLoading}/>
           </section>
           <section
             id="about-component"

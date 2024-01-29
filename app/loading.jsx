@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { gsap, Power1 } from "gsap";
+import { gsap, Power4 } from "gsap";
 
 const LoadingScreen = () => {
   useEffect(() => {
@@ -8,7 +8,7 @@ const LoadingScreen = () => {
 
     gsap.set(svg, {
       transformOrigin: "center center",
-      scale: 0.2, // Adjust the initial scale as needed
+      scale: 0.4, // Adjust the initial scale as needed
       fill: "#FFFFFF",
       position: "absolute",
       top: "50%",
@@ -17,13 +17,13 @@ const LoadingScreen = () => {
       translateY: "-50%",
     });
 
-    const tl = gsap.timeline({ repeat: -1, yoyo: true });
+    const tl = gsap.timeline({ repeat: 0, yoyo: true });
 
     // tl.to(svg, { duration: 0.5, scale: 0.3, ease: Power1.easeIn });
     tl.to(
       svg,
-      { duration: 0.5, fill: "#BDD4FF", ease: Power1.easeInOut },
-      "-=0.5"
+      { duration: 2, fill: "#BDD4FF", ease: Power4.easeInOut },
+      "-=2"
     );
     // tl.to(svg, { duration: 0.5, scale: 0.3, ease: Power1.easeOut }, "-=0.5");
     // tl.to(svg, { duration: 1, rotation: 180, ease: Power1.easeInOut }, "-=0.3");
