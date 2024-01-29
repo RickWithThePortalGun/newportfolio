@@ -33,7 +33,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <link rel="prefetch" href="https://prod.spline.design/rlvhbXU9R6aR8DQh/scene.splinecode" as="script" />
       <link rel="icon" href="favicon.ico" />
       <body className={`${montserrat.className} ${montreal.className} bg-customblack`}>{children}</body>

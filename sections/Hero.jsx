@@ -53,7 +53,7 @@ const Hero = ({isLoading, LazySpline}) => {
               }}
               transition={{
                 duration: 1.5,
-                repeat: 5,
+                repeat: 3,
                 repeatType: "loop",
               }}
               xmlns="http://www.w3.org/2000/svg"
