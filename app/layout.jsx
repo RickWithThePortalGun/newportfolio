@@ -37,6 +37,7 @@ export default function RootLayout({ children }) {
       <link rel="prefetch" href="https://prod.spline.design/rlvhbXU9R6aR8DQh/scene.splinecode" as="script" />
       <link rel="icon" href="favicon.ico" />
       <body className={`${montserrat.className} ${montreal.className} bg-customblack`}>{children}</body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     </html>
   );
 }

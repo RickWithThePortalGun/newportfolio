@@ -4,39 +4,28 @@ import { gsap, Power4 } from "gsap";
 
 const LoadingScreen = () => {
   useEffect(() => {
-    const svg = document.getElementById("loading-svg");
-
-    gsap.set(svg, {
-      transformOrigin: "center center",
-      scale: 0.4, // Adjust the initial scale as needed
-      fill: "#FFFFFF",
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      translateX: "-50%",
-      translateY: "-50%",
+    const top = document.getElementById("loading-svg");
+    anime({
+      targets: top,
+      fill: [
+        { value: "#e5e5e5" },
+        { value: "#88A2FF" },
+        { value: "#252525" }, // Start color
+        { value: "#BDD4FF" }, // End color
+      ],
+      duration: 2000, // Duration of the animation in milliseconds
+      easing: "easeInOutSine", // Easing function for a smooth transition
+      direction: "alternate", // Alternate between start and end colors
+      loop: true, // Loop the animation
     });
-
-    const tl = gsap.timeline({ repeat: 0, yoyo: true });
-
-    // tl.to(svg, { duration: 0.5, scale: 0.3, ease: Power1.easeIn });
-    tl.to(
-      svg,
-      { duration: 2, fill: "#BDD4FF", ease: Power4.easeInOut },
-      "-=2"
-    );
-    // tl.to(svg, { duration: 0.5, scale: 0.3, ease: Power1.easeOut }, "-=0.5");
-    // tl.to(svg, { duration: 1, rotation: 180, ease: Power1.easeInOut }, "-=0.3");
-
-    return () => tl.kill(); // Cleanup on unmount
   }, []);
 
   return (
     <div className="loading-screen bg-customblack">
       <svg
         id="loading-svg"
-        width="218"
-        height="183"
+        width="60"
+        height="60"
         viewBox="0 0 218 183"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

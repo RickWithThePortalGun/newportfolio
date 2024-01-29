@@ -4,24 +4,10 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { fadeIn } from "@utils/motion";
 import { annotate } from "rough-notation";
-import { Suspense } from "react";
 import { useWindowSize } from "@utils/hooks";
 
 
 const Hero = ({isLoading, LazySpline}) => {
-  useEffect(() => {
-    const e = document.querySelector("#name-text");
-    if (e) {
-      setTimeout(() => {
-        annotate(e, {
-          type: "bracket",
-          color: "#ffd465",
-          multiline: false,
-          brackets: "bottom",
-        }).show();
-      }, 1000);
-    }
-  }, []);
   const { width } = useWindowSize();
   const isMobile = width <= 768;
   return (
