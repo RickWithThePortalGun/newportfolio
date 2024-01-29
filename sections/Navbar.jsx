@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Menu from "@components/Menu";
 
-const Navbar = () => {
+const Navbar = ({onMenuToggle}) => {
   return (
-    <div className="text-white flex flex-1 font-montreal justify-between items-center">
+    <div className="text-white h-fit flex flex-1 font-montreal justify-between items-center">
       <div className="px-4 py-2 max-sm:px-1">
         <Image
           src={`/assets/Logo.svg`}
@@ -14,9 +14,9 @@ const Navbar = () => {
           alt="My Logo"
         />
       </div>
-      <Menu/>
-      <div className="max-sm:hidden  text-grey flex flex-row items-center gap-10 font-sans font-normal text-[15px]">
-        <p className="cursor-pointer hover-effect z-50" onClick={() => {
+      <Menu onMenuToggle={onMenuToggle}/>
+      <div className="max-lg:hidden  text-grey flex flex-row items-center gap-10 font-sans font-normal text-[15px]">
+        <p className="cursor-pointer whitespace-nowrap hover-effect z-50" onClick={() => {
               document.getElementById("about-component").scrollIntoView({
                 behavior: "smooth",
               });

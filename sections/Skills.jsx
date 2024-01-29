@@ -258,10 +258,10 @@ const Skills = () => {
             >
               <circle cx="5" cy="5" r="5" fill="#BDD4FF" fillOpacity="0.93" />
             </svg>{" "}
-            Machine Learning
+          Dev Tools
           </p>
           <p className="text-grey">
-            Data Analytics, medium complex ML models, Data Visualization
+           Redux, Jest, Webpack, Selenium
           </p>
         </motion.div>
       </div>

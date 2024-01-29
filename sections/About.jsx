@@ -56,7 +56,7 @@ const About = () => {
             </motion.p>
           </div>
         </div>
-        <div className="w-full max-sm:justify-center max-lg:justify-center max-md:justify-center pr-20 max-sm:pr-0 flex pt-10">
+        <div className="w-full max-sm:justify-center lg:justify-end max-md:justify-center pr-20 max-sm:pr-0 flex pt-10">
           <Image
             src={`assets/aiimg.svg`}
             className="max-sm:w-[250px] blur transition-all duration-500 hover:blur-0"
