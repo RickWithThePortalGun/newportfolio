@@ -27,18 +27,6 @@ const Hero = ({isLoading, LazySpline}) => {
   return (
     <>
       <div className="gap-1 items-center pt-[10px] max-sm:pt-[50px] justify-center text-white w-full h-full flex flex-col relative">
-        {isMobile ? (<></>):(
-          <>
-          {}
-          <Suspense fallback={<Image src={"/assets/loader.gif"} width={64} height={64} />}>
-          {!isLoading && (
-              <LazySpline
-                className={`h-full absolute z-0`}
-                scene="https://prod.spline.design/rlvhbXU9R6aR8DQh/scene.splinecode"
-              />
-            )}
-        </Suspense>
-        </>)}
         
         <span id="name-tex" className="z-40">
           <p className="hero-text text-[80px] mt-[5%] max-sm:mt-[2%] tracking-[1px] font-sans leading-[1px] max-sm:pt-[10px] max-sm:text-[40px] max-sssm:[10px] mx-auto whitespace-nowrap text-center w-full">

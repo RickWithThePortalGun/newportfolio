@@ -39,7 +39,7 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #FBDD4FF;
+  background-color: '#FBDD4FF';
   border-radius: 50px;
 }
 .bg-hero-right {
