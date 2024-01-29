@@ -99,7 +99,6 @@ const Option = ({ text, setOpen, handleToggle, setToggle, linkid }) => {
       }}
     >
       <motion.li
-        variants={itemVariants}
         className="flex items-center justify-center z-50 max-sm:justify-start gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-third text-[#fafafa] hover:text-first transition-colors cursor-pointer"
       >
         <span>{text}</span>
