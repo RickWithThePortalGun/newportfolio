@@ -38,7 +38,7 @@ const StaggeredDropDown = ({ onMenuToggle }) => {
           initial={wrapperVariants.closed}
           variants={wrapperVariants}
           style={{ originY: "top", translateX: "-50%" }}
-          className="flex flex-col justify-start items-start z-50 gap-2 px-4 py-2 rounded-lg shadow-xl absolute top-[120%] pl-8 bg-[#101010] border-[2px] border-teal-400/10 left-[50%] w-48 overflow-hidden"
+          className="flex flex-col justify-start items-start z-50 gap-2 px-4 py-2 rounded-lg shadow-xl absolute top-[120%] pl-8 bg-[#101010] border-[2px] border-lighterblue left-[50%] w-48 overflow-hidden"
         >
           <Option
             setOpen={setOpen}
