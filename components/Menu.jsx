@@ -29,8 +29,6 @@ const StaggeredDropDown = ({ onMenuToggle }) => {
             width={15}
             height={15}
             className="w-[20px] h-[20px] object-contain"
-            initial={iconVariants.closed}
-            animate={iconVariants[open ? "open" : "closed"]}
           />
         </div>
 
@@ -126,29 +124,7 @@ const wrapperVariants = {
   },
 };
 
-const iconVariants = {
-  open: { rotate: 180 },
-  closed: { rotate: 0 },
-};
 
-const itemVariants = {
-  open: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      when: "beforeChildren",
-    },
-  },
-  closed: {
-    opacity: 0,
-    y: -15,
-    transition: {
-      when: "afterChildren",
-    },
-  },
-};
 
-const actionIconVariants = {
-  open: { scale: 1, y: 0 },
-  closed: { scale: 0, y: -7 },
-};
+
+
