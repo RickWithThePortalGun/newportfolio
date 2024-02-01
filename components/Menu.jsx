@@ -6,7 +6,6 @@ import Image from "next/image";
 
 const StaggeredDropDown = ({ onMenuToggle }) => {
   const [open, setOpen] = useState(false);
-  const [toggle, setToggle] = useState(false);
   const handleToggle = () => {
     onMenuToggle(!open);
   };
@@ -16,13 +15,12 @@ const StaggeredDropDown = ({ onMenuToggle }) => {
         <div
           onClick={() => {
             setOpen((pv) => !pv);
-            setToggle((prevToggle) => !prevToggle);
             handleToggle();
           }}
           className="items-center max-md:flex hidden px-4 mt-2 py-1 rounded-full text-indigo-50 bg-transparent transition-colors"
         >
           <Image
-            src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
+            src={open ? "/assets/close.svg" : "/assets/menu.svg"}
             alt="menu"
             unoptimized
             priority
@@ -40,7 +38,6 @@ const StaggeredDropDown = ({ onMenuToggle }) => {
         >
           <Option
             setOpen={setOpen}
-            setToggle={setToggle}
             linkid="about-component"
             text="About Me"
             handleToggle={handleToggle}
@@ -48,7 +45,6 @@ const StaggeredDropDown = ({ onMenuToggle }) => {
           />
           <Option
             setOpen={setOpen}
-            setToggle={setToggle}
             linkid="skills-component"
             text="Skills"
             handleToggle={handleToggle}
@@ -56,7 +52,6 @@ const StaggeredDropDown = ({ onMenuToggle }) => {
           />
           <Option
             setOpen={setOpen}
-            setToggle={setToggle}
             linkid="education-component"
             text="Education"
             handleToggle={handleToggle}
@@ -64,7 +59,6 @@ const StaggeredDropDown = ({ onMenuToggle }) => {
           />
           <Option
             setOpen={setOpen}
-            setToggle={setToggle}
             linkid="experience-component"
             text="Experiences"
             handleToggle={handleToggle}
@@ -72,7 +66,6 @@ const StaggeredDropDown = ({ onMenuToggle }) => {
           />
           <Option
             setOpen={setOpen}
-            setToggle={setToggle}
             linkid="contact-component"
             text="Contact"
             handleToggle={handleToggle}
@@ -84,7 +77,7 @@ const StaggeredDropDown = ({ onMenuToggle }) => {
   );
 };
 
-const Option = ({ text, setOpen, handleToggle, setToggle, linkid }) => {
+const Option = ({ text, setOpen, handleToggle, linkid }) => {
   return (
     <p
       onClick={() => {
@@ -92,7 +85,6 @@ const Option = ({ text, setOpen, handleToggle, setToggle, linkid }) => {
           behavior: "smooth",
         });
         setOpen(false);
-        setToggle(false);
         handleToggle(false); 
       }}
     >

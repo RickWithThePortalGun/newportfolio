@@ -7,7 +7,7 @@ import { fadeIn } from "@utils/motion";
 const About = () => {
   return (
     <div className="flex flex-col z-50 pt-[100px] text-white h-fit">
-      <div className="flex max-sm:flex-col h-fit max-lg:flex-col max-lg:justify-center flex-row">
+      <div className="flex h-fit max-lg:flex-col max-lg:justify-center flex-row">
         <div className="max-sm:w-full pl-[70px] h-fit max-sm:px-[30px]">
           <span id="about-text" className="subtopic font-extrabold text-[40px]">
             In truth, a glimpse into mine own essence.{" "}
@@ -56,7 +56,7 @@ const About = () => {
             </motion.p>
           </div>
         </div>
-        <div className="w-full max-sm:justify-center lg:justify-end max-md:justify-center pr-20 max-sm:pr-0 flex pt-10">
+        <div className="w-full max-sm:justify-center lg:justify-end max-lg:justify-center  max-sm:pr-0 flex pt-10 pr-10">
           <Image
             src={`assets/aiimg.svg`}
             className="max-sm:w-[250px] blur transition-all duration-500 hover:blur-0"

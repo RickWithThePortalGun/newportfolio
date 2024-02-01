@@ -33,10 +33,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html lang="en">
       <link rel="icon" href="favicon.ico" />
       <body className={`${montserrat.className} ${montreal.className} bg-customblack`}>{children}</body>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     </html>
   );
 }

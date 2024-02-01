@@ -63,6 +63,8 @@ const LoadingScreen = () => {
           background: #000; /* Adjust the background color as needed */
         }
       `}</style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
     </div>
   );
 };
