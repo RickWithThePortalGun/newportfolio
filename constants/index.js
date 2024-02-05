@@ -49,7 +49,7 @@ const startups = [
 
 const projects = [
   {
-    project_name: "TaskMastaz",
+    project_name: "TicketMastaz",
     date: "Feb 2024",
     status: "Online",
     designation: "Next.js • Tailwind CSS • Payload CMS ",
