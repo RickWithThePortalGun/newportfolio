@@ -53,7 +53,7 @@ const projects = [
     date: "Feb 2024",
     status: "Online",
     designation: "Next.js • Tailwind CSS • Payload CMS ",
-    link: "https://taskmastaz.up.railway.app",
+    link: "https://ticketmastaz.up.railway.app",
     description:
       "A Next.js webapp built with Nextjs, Payload CMS and Tailwind, empowers seamless event ticket buying and selling with Stripe integration.",
   },
