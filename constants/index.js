@@ -98,7 +98,7 @@ const projects = [
     date: "Jan 2023",
     status: "Online",
     designation: "React.js • Tailwind CSS • Framer ",
-    link: "nike-landing-page-weld.vercel.app",
+    link: "https://nike-landing-page-weld.vercel.app",
     description:
       "A Nike Clone built using React.js, Tailwind CSS and other frameworks and libraries. ",
   },

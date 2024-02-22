@@ -28,7 +28,6 @@ const About = () => {
               variants={fadeIn("right", "spring", 1, 1)}
               initial={`hidden`}
               whileInView={`show`}
-              className=""
             >
               {" "}
               {`> 4 years in web development.`}{" "}
@@ -38,7 +37,6 @@ const About = () => {
               variants={fadeIn("right", "spring", 1.5, 1)}
               initial={`hidden`}
               whileInView={`show`}
-              className=""
             >
               {" "}
               {`> 2 years in mobile development.`}{" "}
@@ -56,15 +54,18 @@ const About = () => {
             </motion.p>
           </div>
         </div>
-        <div className="w-full max-sm:justify-center lg:justify-end max-lg:justify-center  max-sm:pr-0 flex pt-10 pr-10">
+        <motion.div viewport={{ once: true }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 3.5 }} className="w-full max-sm:justify-center lg:justify-end max-lg:justify-center  max-sm:pr-0 flex pt-10 pr-10">
           <Image
             src={`assets/aiimg.svg`}
-            className="max-sm:w-[250px] blur transition-all duration-500 hover:blur-0"
+            className="max-sm:w-[250px]"
             width={400}
             height={400}
             alt="My Image"
           />
-        </div>
+        </motion.div>
       </div>
       <div className="w-full h-fit flex justify-center flex-1 overflow-hidden">
         <svg
