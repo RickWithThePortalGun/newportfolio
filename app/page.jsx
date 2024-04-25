@@ -11,30 +11,28 @@ import {
   Contact,
 } from "@/sections";
 import LoadingScreen from "./loading";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import React from "react";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
-  const [isMenuOpen, setIsMenuOpen] = useState('');
 
-  const handleMenuToggle = (value) => {
-    setIsMenuOpen(value);
-  };
-
-  useEffect(() => {
-    const delay = setTimeout(() => {
+  const delayFunction = useCallback(() => {
+    setTimeout(() => {
       setIsLoading(false);
     }, 2000);
-
+  }, [setIsLoading]);
+  
+  useEffect(() => {
+    delayFunction();
+  
     return () => {
-      clearTimeout(delay);
+      clearTimeout(delayFunction);
     };
-  }, [isLoading]);
+  }, [delayFunction]);
 
   return (
     <>
-      {/* <MouseFollowGradient/> */}
       {isLoading ? (
         <LoadingScreen />
       ) : (
@@ -46,12 +44,10 @@ export default function Home() {
           className="relative font-sans max-w-[90rem] mx-auto w-full h-screen overflow-x-hidden"
         >
           <div className="w-full max-w-[90rem] px-6 flex justify-center max-sm:fixed max-sm:z-50 rounded-full max-md:bg-glassmorphism">
-            <Navbar onMenuToggle={handleMenuToggle} />
+            <Navbar />
           </div>
           <section
-            className={`${
-              isMenuOpen ? "blur-md" : "blur-none"
-            } transition ease-in-out duration-150 pt-[80px] max-sm:pt-[0px] h-auto max-sm:h-full
+            className={`transition ease-in-out duration-150 pt-[80px] max-sm:pt-[0px] h-auto max-sm:h-full
          max-sm:mt-[0px] max-w-[90rem] w-full mx-auto`}
           >
             <svg
@@ -166,15 +162,13 @@ export default function Home() {
           </section>
           <section
             id="about-component"
-            className={`max-w-[90rem] mx-auto ${
-              isMenuOpen ? "blur-md" : "blur-none"
-            }`}
+            className={`max-w-[90rem] mx-auto`}
           >
             <About />
           </section>
           <section
             id="skills-component"
-            className={` ${isMenuOpen ? "blur-md" : "blur-none"}
+            className={`
     max-w-[90rem] max-h-max mx-auto relative`}
           >
             <div className="gradient-container">
@@ -243,7 +237,7 @@ export default function Home() {
           <section
             id="education-component"
             className={`max-w-[90rem] max-h-max mx-auto relative
-            ${isMenuOpen ? "blur-md" : "blur-none"}`}
+            `}
           >
             <svg
               className="absolute z-36"
@@ -303,9 +297,7 @@ export default function Home() {
           </section>
           <section
             id="experience-component"
-            className={`max-w-[90rem] max-h-max mx-auto ${
-              isMenuOpen ? "blur-md" : "blur-none"
-            }`}
+            className={`max-w-[90rem] max-h-max mx-auto `}
           >
             <svg
               className="absolute -z-10"
@@ -364,9 +356,7 @@ export default function Home() {
             <Experience />
           </section>
           <section
-            className={`max-w-[90rem] max-h-max mx-auto relative ${
-              isMenuOpen ? "blur-md" : "blur-none"
-            }`}
+            className={`max-w-[90rem] max-h-max mx-auto relative `}
           >
             <svg
               className="absolute top-0 right-0 z-40"
@@ -426,9 +416,7 @@ export default function Home() {
           </section>
           <section
             id="contact-component"
-            className={`max-w-[90rem] max-h-max mx-auto relative ${
-              isMenuOpen ? "blur-md" : "blur-none"
-            }`}
+            className={`max-w-[90rem] max-h-max mx-auto relative `}
           >
             <Contact />
           </section>

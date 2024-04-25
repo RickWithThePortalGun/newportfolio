@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.0.31",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "framer-motion": "^10.17.9",
     "gsap": "^3.12.4",
+    "lucide-react": "^0.373.0",
     "next": "14.0.4",
     "react": "^18",
     "react-chrono": "^2.4.0",
@@ -20,7 +24,9 @@
     "react-intersection-observer": "^9.5.3",
     "react-scroll": "^1.9.0",
     "react-vertical-timeline-component": "^3.6.0",
-    "rough-notation": "^0.5.1"
+    "rough-notation": "^0.5.1",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

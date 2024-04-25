@@ -1,20 +1,15 @@
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { useEffect } from "react";
-import { fadeIn } from "@utils/motion";
-import { annotate } from "rough-notation";
 import { useWindowSize } from "@utils/hooks";
+import { fadeIn } from "@utils/motion";
+import { motion } from "framer-motion";
 
 
-const Hero = ({isLoading, LazySpline}) => {
+const Hero = () => {
   const { width } = useWindowSize();
-  const isMobile = width <= 768;
+  
   return (
     <>
       <div className="gap-1 items-center pt-[10px] max-sm:pt-[50px] justify-center text-white w-full h-full flex flex-col relative">
-        
-        <span id="name-tex" className="z-40">
+        <span id="name-text" className="z-40">
           <p className="hero-text text-[80px] mt-[5%] max-sm:mt-[2%] tracking-[1px] font-sans leading-[1px] max-sm:pt-[10px] max-sm:text-[40px] max-sssm:[10px] mx-auto whitespace-nowrap text-center w-full">
             Oyeniyi Victor
           </p>
@@ -53,7 +48,7 @@ const Hero = ({isLoading, LazySpline}) => {
               }}
               transition={{
                 duration: 1.5,
-                repeat: 3,
+                repeat: Infinity,
                 repeatType: "loop",
               }}
               xmlns="http://www.w3.org/2000/svg"
