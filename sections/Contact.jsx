@@ -95,8 +95,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <p className="absolute bottom-0 text-grey text-[15px] mt-[200px] mb-10 font-sans font-normal text-center">
-        &copy; 2024 QuantumUi.dev All Rights Reserved.
+      <p className="absolute  bottom-0 text-grey text-[15px] mt-[200px] mb-10 font-sans font-bold text-center">
+        &copy; 2024 Oyeniyi Victor. All Rights Reserved.
       </p>
     </div>
   );

@@ -6,7 +6,7 @@ import { hobbys } from "@constants";
 const Hobbies = () => {
   return (
     <>
-      <div className="bg-transparent mt-[200px] z-50 flex flex-col justify-start items-center max-sm:px-[30px]">
+      <div className="bg-transparent mt-[200px] pt-[100px] z-50 flex flex-col justify-start items-center max-sm:px-[30px]">
         <p className="subtopic text-[40px] text-start">
           Leisurely Inclinations.
         </p>

@@ -174,7 +174,7 @@ export default function Home() {
             <div className="gradient-container">
               <svg
                 id="gradient-svg"
-                className="absolute rounded-[50%] top-0  right-0 z-50"
+                className="absolute rounded-[50%] top-0  right-0 z-40"
                 xmlns="http://www.w3.org/2000/svg"
                 width="500"
                 height="500"
@@ -356,6 +356,7 @@ export default function Home() {
             <Experience />
           </section>
           <section
+          id="hobbies-component"
             className={`max-w-[90rem] max-h-max mx-auto relative `}
           >
             <svg

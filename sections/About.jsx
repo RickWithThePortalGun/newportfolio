@@ -50,7 +50,7 @@ const About = () => {
               transition={{ duration: 3.5 }}
               className="text-left"
             >
-              A seasoned developer, specialised in creating immersive websites featuring cutting-edge 3D animations and graphics.
+              A seasoned developer, specialised in creating immersive mobile and web apps featuring cutting-edge 3D animations and graphics.
             </motion.p>
           </div>
         </div>

@@ -48,15 +48,7 @@ const startups = [
 ];
 
 const projects = [
-  {
-    project_name: "TicketMastaz",
-    date: "Feb 2024",
-    status: "Online",
-    designation: "Next.js • Tailwind CSS • Payload CMS ",
-    link: "https://ticketmastaz.up.railway.app",
-    description:
-      "A Next.js webapp built with Nextjs, Payload CMS and Tailwind, empowers seamless event ticket buying and selling with Stripe integration.",
-  },
+ 
   {
     project_name: "Thundr Analytics",
     date: "Jan 2024",
@@ -129,6 +121,15 @@ const projects = [
     link: "https://dribbbleclone-zeta.vercel.app/",
     description:
       "Crafted a visually stunning Dribbble clone with meticulous attention to detail, integrating captivating animations through Framer and GSAP. Demonstrated expertise in front-end development, UI/UX Design, and interactive user experience.",
+  },
+  {
+    project_name: "TicketMastaz",
+    date: "Feb 2024",
+    status: "Offline",
+    designation: "Next.js • Tailwind CSS • Payload CMS ",
+    link: "https://ticketmastaz.up.railway.app",
+    description:
+      "A Next.js webapp built with Nextjs, Payload CMS and Tailwind, empowers seamless event ticket buying and selling with Stripe integration.",
   },
   {
     project_name: "TopTierBinary",

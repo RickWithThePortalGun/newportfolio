@@ -22,7 +22,7 @@ const Experience = () => {
   return (
     <>
       {" "}
-      <div className="bg-transparent mt-[200px] z-50 flex flex-col justify-start items-center max-sm:px-[30px]">
+      <div className="bg-transparent mt-[200px] max-md:pt-[100px] z-50 flex flex-col justify-start items-center max-sm:px-[30px]">
         <p className="subtopic text-[40px] text-start">Proven Prowess.</p>
         <p className="text-center text-white pt-10 text-[25px]">Startups</p>
       </div>

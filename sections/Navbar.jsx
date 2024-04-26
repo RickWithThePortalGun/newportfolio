@@ -5,11 +5,13 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
+  
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Briefcase, InfoIcon, LucideMenu, MenuSquare, PhoneCall, Puzzle, School2Icon } from "lucide-react";
+import { Gamepad } from "lucide-react";
+import { LucideGamepad } from "lucide-react";
+import { LucideGamepad2 } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -24,10 +26,10 @@ const Navbar = () => {
         />
       </div>
       <DropdownMenu  >
-        <DropdownMenuTrigger className="max-lg:flex hidden">
+        <DropdownMenuTrigger className="max-lg:flex hidden z-50">
           <LucideMenu size={30} className="mt-2" color="#fafafa" />
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="mr-6 shadow-lg bg-[#0a0a0a] border-none ">
+        <DropdownMenuContent className="mr-6 shadow-lg bg-[#0a0a0a] border-none z-50">
           <DropdownMenuItem className="text-white flex gap-4 font-bold"
             onClick={() => {
               document.getElementById("about-component").scrollIntoView({
@@ -35,28 +37,34 @@ const Navbar = () => {
               });
             }}
           >
-            About <InfoIcon size={15}/>
+           <InfoIcon size={15}/> About 
           </DropdownMenuItem>
           <DropdownMenuItem className="text-white flex gap-4 font-bold" onClick={() => {
             document.getElementById("skills-component").scrollIntoView({
               behavior: "smooth",
             });
-          }}>Skills <Puzzle size={15}/></DropdownMenuItem>
+          }}><Puzzle size={15}/>Skills </DropdownMenuItem>
           <DropdownMenuItem className="text-[#fafafa] font-bold flex gap-4" onClick={() => {
             document.getElementById("experience-component").scrollIntoView({
               behavior: "smooth",
             });
-          }}>Experience <Briefcase size={15}/></DropdownMenuItem>
+          }}> <Briefcase size={15}/> Experience </DropdownMenuItem>
           <DropdownMenuItem className="text-[#fafafa] font-bold flex gap-4" onClick={() => {
             document.getElementById("education-component").scrollIntoView({
               behavior: "smooth",
             });
-          }}>Education <School2Icon size={15}/></DropdownMenuItem>
+          }}><School2Icon size={15}/> Education </DropdownMenuItem>
+          <DropdownMenuItem className="text-[#fafafa] flex gap-4 font-bold" onClick={() => {
+            document.getElementById("hobbies-component").scrollIntoView({
+              behavior: "smooth",
+            });
+          }}><LucideGamepad2 size={15}/> Hobbies </DropdownMenuItem>
           <DropdownMenuItem className="text-[#fafafa] flex gap-4 font-bold" onClick={() => {
             document.getElementById("contact-component").scrollIntoView({
               behavior: "smooth",
             });
-          }}>Contact <PhoneCall size={15}/></DropdownMenuItem>
+          }}><PhoneCall size={15}/> Contact </DropdownMenuItem>
+          
         </DropdownMenuContent>
       </DropdownMenu>
 
